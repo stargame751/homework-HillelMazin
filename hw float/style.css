@@ -1,0 +1,10 @@
+
+.first-block-1 {
+    float: left;
+}
+.first-block-2 {
+    float: right;
+}
+.clearfix {
+    clear:both;
+}

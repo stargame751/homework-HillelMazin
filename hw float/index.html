@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link ref="stylesheet" href="../styles/reset.css" />
+    <link ref="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">
+        <div class="first-block-1">1</div>
+        <div class="first-block-2">2</div>
+        <div class="clearfix"></div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="second">
+        <div class="second-block-1">1</div>
+        <div class="second-block-2">5</div>
+        <div class="second-block-3">4</div>
+        <div class="second-block-4">3</div>
+        <div class="second-block-5">2</div>
+        <div class="clearfix"></div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="third">
+        <div class="third-block-1">1</div>
+        <div class="third-block-2">2</div>
+        <div class="third-block-3">4</div>
+        <div class="third-block-4">3</div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <style>
+      .container {
+        margin: 0 auto;
+        width: 1100px;
+        height: 800px;
+        background-color: #c4c4c4;
+      }
+      .first,
+      .second,
+      .third {
+        background-color: #e6e6e6;
+        width: 1000px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      .first *,
+      .second *,
+      .third * {
+        width: 50px;
+        background-color: #fc8f8f;
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        vertical-align: justify;
+      }
+      .first-block-1 {
+        float: left;
+        height: 200px;
+        width: 200px;
+      }
+      .first-block-2 {
+        float: right;
+        height: 200px;
+        width: 200px;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .second-block-1 {
+        float: left;
+        height: 200px;
+        width: 200px;
+      }
+      .second-block-5,
+      .second-block-4,
+      .second-block-3,
+      .second-block-2 {
+        float: right;
+        height: 100px;
+        width: 100px;
+        margin: 0px 0px 0px 15px;
+      }
+
+      .third-block-1,
+      .third-block-2 {
+        float: left;
+        height: 200px;
+        width: 200px;
+        margin: 0px 15px 0px 0px;
+      }
+      .third-block-3,
+      .third-block-4 {
+        float: right;
+        height: 200px;
+        width: 200px;
+        margin: 0px 0px 0px 15px;
+      }
+    </style>
+  </body>
+</html>
