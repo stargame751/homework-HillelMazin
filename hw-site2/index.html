@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link ref="stylesheet" href="./reset.css" />
+    <link ref="stylesheet" href="./style.css" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="navigation-menu">
+            <li class="homepage">Homepage</li>
+            <li class="ab2">About</li>
+            <li class="works">Works</li>
+            <li class="process">Process</li>
+            <li class="contacts">Contacts</li>
+            <!-- <li><a href="#" style="color: #34547a">Homepage</a></li>
+            <li><a href="#" style="color: black">About Authors</a></li>
+            <li><a href="#" style="color: black">Works</a></li>
+            <li><a href="#" style="color: black">Process</a></li>
+            <li><a href="#" style="color: black">Contacts</a></li> -->
+          </ul>
+        </nav>
+        <div class="design">
+          <h3>Design and Layout</h3>
+        </div>
+        <div class="lorem">
+          <p>
+            Lorem Ipsum is fish text often used in print and web design. Lorem
+            Ipsum <br />
+            has been the standard "fish" for Latin texts since the early 16th
+            century.
+          </p>
+        </div>
+        <div class="button">
+          <button class="write-me">Write Me</button>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <div class="about">
+          <h2 class="about-me">
+            <h2>About Me</h2>
+          </h2>
+          <p class="lorem-two">
+            About meLorem Ipsum is fish text often used in print and web
+            design.<br />
+            Lorem Ipsum has been the standard "fish" for Latin texts since the
+            early <br />
+            16th century.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project">
+      <div class="container2">
+        <div class="projects">
+          <div class="project-items">
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+            <img src="../img/img1.jpg" alt="#" class="card" />
+            <div class="text">
+              <h1 class="h1text">40+</h1>
+              <p class="project-text">projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <div class="container">
+        <div class="how-do-you-work">
+          <h2 class="work">
+            <h2>How Do I Work</h2>
+          </h2>
+        </div>
+        <div class="lorem-two">
+          <p>
+            Lorem Ipsum is fish text often used in print and web design. Lorem
+            Ipsum <br />
+            has been the standard "fish" for Latin texts since the early 16th
+            century.
+          </p>
+        </div>
+        <div class="videoplayer">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vvGTc3LJtVQ?si=TjTe9GgOcQ2LC5G7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container2">
+        <div class="information">
+          <h3 class="john">
+            <h3>John Smith</h3>
+          </h3>
+          <p>(c) 2018. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .container2 {
+        background-color: #34547a;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        color: white;
+      }
+      .nav {
+        /* margin: 25px 50px; */
+      }
+      .header {
+        background-color: #eeeff1;
+      }
+      /* .nav ul li::before {
+        content: "\1F604";
+      } */
+      .ab2::before {
+        content: "\1F170";
+      }
+      .works::before {
+        content: "\1F4CB";
+      }
+      .contacts::before {
+        content: "\1F4C1";
+      }
+      .process::before {
+        content: "\23F3";
+      }
+      .nav ul li:first-child {
+        left: 0;
+        color: #34547a;
+      }
+      .nav ul li:first-child::before {
+        left: 0;
+        color: #34547a;
+        content: "\1F3E0";
+      }
+      .nav ul li {
+        display: inline;
+        color: black;
+        padding-right: 50px;
+      }
+
+      .navigation-menu {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: Roboto;
+        /* margin-right: 95px; */
+        margin-bottom: 100px;
+        padding-inline-start: 0;
+      }
+      .design {
+        /* padding: 79px 0 0 200px; */
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 48px;
+        margin: 50px 0 100px 0;
+      }
+      .lorem {
+        /* padding: 79px 0 0 200px; */
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 50px 0 100px 0;
+      }
+      .about {
+        background-color: white;
+        padding: 100px;
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+      }
+      .write-me {
+        background-color: #34547a;
+        width: 225px;
+        height: 65px;
+        top: 494px;
+        left: 399px;
+        font-family: roboto;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      .about-me {
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+      }
+      .lorem-two {
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+      .project {
+        /* display: inline-block;
+        padding: 50px 200px; */
+        background-color: #34547a;
+      }
+      .projects {
+        display: flex;
+        padding: 50px 0px;
+      }
+      .project-items {
+        width: 141px;
+        height: 52px;
+        color: white;
+        display: flex;
+        margin-left: 30px;
+      }
+      .h1text {
+        font-weight: 500;
+        font-family: roboto;
+        font-size: 21px;
+      }
+      .project-text {
+        font-weight: 400;
+        font-family: roboto;
+        font-size: 16px;
+      }
+      .video {
+        font-family: roboto;
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+      }
+      .footer {
+        font-family: roboto;
+        background-color: #34547a;
+      }
+      .video {
+        padding: 100px 320px;
+        align-items: center;
+      }
+      .information {
+        margin: 0;
+        padding: 50px 0px;
+      }
+      .h1text {
+        font-weight: 500;
+        font-family: roboto;
+        font-size: 21px;
+        margin: 0;
+      }
+      .project-text {
+        font-weight: 400;
+        font-family: roboto;
+        font-size: 16px;
+        margin: 0px;
+      }
+      .text {
+        margin-right: 30px;
+        margin-bottom: 50px;
+      }
+      .videoplayer {
+        display: flex;
+        justify-content: center; */
+        align-items: center;
+      }
+      .card {
+        margin-left:80px;
+      }
+      .card:first-child{
+        margin:0;
+      }
+    </style>
+  </body>
+</html>
