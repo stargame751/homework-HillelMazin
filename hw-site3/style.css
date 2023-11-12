@@ -1,0 +1,15 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .bg-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  .wrapper {
+    background-color: #f9f6f5;
+    height: 747px;
+  }

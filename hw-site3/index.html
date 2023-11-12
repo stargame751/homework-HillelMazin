@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link ref="stylesheet" href="./reset.css" />
+    <link ref="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="#" class="dudeshape">
+            <p>Dudeshape</p>
+          </a>
+        </div>
+        <div class="nav">
+          <div class="navigation-menu">
+            <ul class="nav-items">
+              <li class="nav-item">
+                <a href="#" class="Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="Products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="Contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="About">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="login-menu">
+          <div class="login-items">
+            <a href="#" class="login-item">
+              <img src="../img/Screenshot_1.png" />
+            </a>
+            <a href="#" class="login-item">
+              <img src="../img/Screenshot_2.png" />
+            </a>
+            <a href="#" class="login-item">
+              <img src="../img/Screenshot_3.png" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="bg-container">
+        <div class="container"></div>
+      </div>
+    </div>
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .bg-container {
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 100%;
+        background-image: url(./bg.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+      .wrapper {
+        background-color: #f9f6f5;
+        height: 747px;
+      }
+      .dudeshape {
+        font-family: red hat display;
+        color: #222222;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .nav ul li {
+        font-family: red hat display;
+        font-weight: 400;
+        font-size: 16px;
+        color: black;
+        display: flex;
+        margin: 15px 25px 0 25px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav-items {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </body>
+</html>
