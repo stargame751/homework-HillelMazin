@@ -14,73 +14,76 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="logo">
+    <header class="header">
+      <div class="wrapper">
+        <div class="wrapper__logo">
           <a href="#" class="dudeshape">
             <p>Dudeshape</p>
           </a>
         </div>
-        <div class="nav">
+        <div class="wrapper_nav">
           <div class="navigation-menu">
             <ul class="nav-items">
-              <li class="nav-item">
+              <li class="nav-item__Home">
                 <a href="#" class="Home">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item__Products">
                 <a href="#" class="Products">Products</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item_Contact">
                 <a href="#" class="Contact">Contact Us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item_About">
                 <a href="#" class="About">About Us</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="login-menu">
+        <div class="wrapper__login-menu">
           <div class="login-items">
-            <a href="#" class="login-item">
+            <a href="#" class="login-item__profile">
               <img src="./img/Screenshot_1.png" />
             </a>
-            <a href="#" class="login-item">
+            <a href="#" class="login-item__buy">
               <img src="./img/Screenshot_2.png" />
             </a>
-            <a href="#" class="login-item">
+            <a href="#" class="login-item__settings">
               <img src="./img/Screenshot_3.png" />
             </a>
           </div>
         </div>
-      </header>
+      </div>
+     </div>
       <div class="bg-container">
-        <div class="container container__test">
-          <div class="title">
+        <div class="container container__relative">
+          <div class="main">
+           <div class="main__title">
             <h2 class="sell-text">
               Get Your Best Cosmetic<br />
               Products Here
             </h2>
-          </div>
-          <div class="info">
+           </div>
+           <div class="main__info">
             <p>
               Lorem Ipsum is simply dummy text of the printing and <br />
               typesetting industry. Lorem Ipsum has been the industry's <br />
               standard dummy
             </p>
-          </div>
-          <div class="search">
+           </div>
+           <div class="main__search">
             <input type="text" class="box" />
             <p class="search2">Search...</p>
             <button class="search-button">
               <img src="./img/Screenshot_4.png" alt="#" />
             </button>
-          </div>
-          <button class="shop-now">
+           </div>
+           <button class="shop-now">
             <p>Shop now</p>
-          </button>
-        </div>
+           </button>
+          </div>
+         </div>
       </div>
-    </div>
+    </header>
     <div class="logo">
       <div class="container">
         <img src="./img/logo.png" alt="#" class="logo-box" />
@@ -89,7 +92,7 @@
     <div class="main">
       <div class="container">
         <h3 class="product">Our Popular Product</h3>
-        <div class="main-flex2">
+        <div class="main-flex2 main-flex2__left">
           <p class="info">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.<br />
@@ -97,8 +100,8 @@
           </p>
           <a href="#" class="product2">Discover Our Products &rarr;</a>
         </div>
-        <div class="main-flex2">
-          <div class="main1">
+        <div class="main-flex2 main-flex2__right">
+          <div class="main__left">
             <img src="./img/bottle1.png" alt="#" class="bottle1" />
             <h2 class="cosmetic">Cosmetic Products</h2>
             <p class="info">
@@ -107,16 +110,16 @@
               standard dummy
             </p>
             <div class="button-group">
-              <button class="button1">
+              <button class="button__black">
                 <p class="buttontext1">Buy Now</p>
               </button>
-              <button class="button2">
+              <button class="button__white">
                 <p class="buttontext1">Add To Cart</p>
               </button>
               <span class="dollar">120$</span>
             </div>
           </div>
-          <div class="main2">
+          <div class="main__right">
             <img src="./img/bottle2.png" alt="#" class="bottle2" />
             <h2 class="cosmetic">Cosmetic Products</h2>
             <p class="info">
@@ -125,10 +128,10 @@
               standard dummy
             </p>
             <div class="button-group">
-              <button class="button1">
+              <button class="button__black">
                 <p class="buttontext1">Buy Now</p>
               </button>
-              <button class="button2">
+              <button class="button__white">
                 <p class="buttontext1">Add To Cart</p>
               </button>
               <span class="dollar">120$</span>
@@ -222,7 +225,7 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="container container__test">
+      <div class="container container__relative">
         <div class="flex-box5">
           <h1 class="subscribe">Subscribe To Get Our Latest News</h1>
           <div class="input">
@@ -293,7 +296,7 @@
         background-repeat: no-repeat;
         background-position: 938px -10px;
       }
-      .wrapper {
+      .header {
         background-color: #f9f6f5;
       }
       .dudeshape {
@@ -302,7 +305,7 @@
         font-weight: 700;
         font-size: 24px;
       }
-      .nav ul li {
+      .wrapper_nav ul li {
         font-family: red hat display;
         font-weight: 400;
         font-size: 16px;
@@ -310,7 +313,7 @@
         display: flex;
         margin: 15px 25px 0 25px;
       }
-      .header {
+      .wrapper {
         display: flex;
         justify-content: space-between;
         max-width: 1200px;
@@ -321,11 +324,18 @@
         justify-content: space-between;
         align-items: center;
       }
-      .title {
+      .main__title {
         font-family: red hat display;
         font-weight: 500;
         font-size: 56px;
         line-height: 70px;
+      }
+      .main__info {
+        font-family: red hat display;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        margin:0;
       }
       .info {
         font-family: red hat display;
@@ -346,7 +356,7 @@
         position: absolute;
         /* top: 577px;
         left: 170px; */
-        top:66%;
+        top:64%;
         left:2%;
         font-family: red hat display;
         font-weight: 400;
@@ -355,13 +365,14 @@
       }
       .search-button {
         position: absolute;
-        top: 67%;
+        top: 65%;
         left: 24%;
+        margin: -3px 0px 0px 0px;
       }
-      .container__test {
+      .container__relative {
         position: relative;
       }
-      .login-menu {
+      .wrapper__login-menu {
         margin: 23px 0px 0 0px;
       }
       .shop-now {
@@ -403,7 +414,7 @@
         border: 1px;
         margin-right: 150px;
       }
-      .button1 {
+      .button__black {
         background-color: #402f2c;
         color: white;
         padding: 16px 32px 16px 32px;
@@ -412,7 +423,7 @@
         font-size: 18px;
         line-height: 24px;
       }
-      .button2 {
+      .button__white {
         background-color: white;
         color: #402f2c;
         padding: 16px 32px 16px 32px;
