@@ -84,6 +84,30 @@
          </div>
       </div>
     </header>
+    <div class="logo">
+      <div class="container">
+        <ul class="logo-items">
+          <li class="first-item">
+            <img src="./img/1.png" alt="#">
+          </li>
+          <li class="first-item">
+            <img src="./img/2.png" alt="#">
+          </li>
+          <li class="first-item">
+            <img src="./img/3.png" alt="#">
+          </li>
+          <li class="first-item">
+            <img src="./img/4.png" alt="#">
+          </li>
+          <li class="first-item">
+            <img src="./img/5.png" alt="#">
+          </li>
+          <li class="first-item">
+            <img src="./img/6.png" alt="#">
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- <div class="logo">
       <div class="container">
         <img src="./img/logo.png" alt="#" class="logo-box" />
@@ -277,16 +301,19 @@
         @media screen and (max-width: 1200px) {
           .container {
             max-width: 970px;
+            padding: 0, 15px;
           }
         }
         @media screen and (max-width: 992px) {
           .container {
             max-width: 750px;
+            padding: 0, 15px;
           }
         }
         @media screen and (max-width: 767px) {
           .container {
             max-width: none;
+            padding: 0, 15px;
           }
         }
         .bg-container {
@@ -338,6 +365,25 @@
           color: #222222;
           font-weight: 700;
           font-size: 24px;
+        }
+        .logo-items {
+          list-style-type: none;
+          display:flex;
+          justify-content: space-between;
+          margin: 80px 0 80px 0;
+        }
+        .logo-items li {
+          position:relative;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+        @media screen and (max-width: 1000px) {
+          .logo-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
         }
         .wrapper_nav ul li {
           font-family: red hat display;
@@ -477,7 +523,6 @@
         @media screen and (max-width: 800px) {
           .button-group {
             gap:25px;
-            margin: 0px 0 15px 0px;
           }
           .product2 {
             margin-bottom:15px;
@@ -535,6 +580,8 @@
           .flex-main4 {
             font-size:40px;
             flex-direction: column;
+            justify-content: center;
+            align-items:center;
           }
           .part2 {
             max-width: 100%;
@@ -552,6 +599,7 @@
         .main5 {
           display: flex;
           justify-content: space-between;
+          gap:20px;
         }
         @media screen and (max-width:800px) {
           .main5 {
@@ -691,7 +739,7 @@
           margin: 130px 0 130px 0;
         }
         .leftfooter {
-          margin: 0px 0px 50px 100px;
+          margin: 0px 0px 50px 0;
         }
         .contactinfo {
           margin: 15px 50px 0px 0;
