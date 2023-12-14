@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link ref="stylesheet" href="/reset.css" />
+    <link ref="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/Screenshot_1.png" alt="#" class="first-main" />
+      <img src="./img/Screenshot_2.png" alt="#" class="second-top" />
+      <img src="./img/Screenshot_3.png" alt="#" class="third-top" />
+      <img src="./img/Screenshot_4.png" alt="#" class="first-bot" />
+      <img src="./img/Screenshot_5.png" alt="#" class="second-bot" />
+      <img src="./img/Screenshot_6.png" alt="#" class="main-bot" />
+    </div>
+
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: 330px 300px;
+        gap: 15px;
+        background-color: aliceblue;
+      }
+      .main-bot {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .first-bot {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+      }
+      .second-bot {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+      }
+      .first-main {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+      }
+      .second-top {
+        grid-column-start: 3;
+        grid-row-start: 1;
+      }
+      .third-top {
+        grid-column-start: 4;
+        grid-row-start: 1;
+      }
+      @media screen and (max-width: 950px) {
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 0, 15px;
+        }
+      }
+      @media screen and (max-width: 560px) {
+        .first-main {
+          width: 100%;
+        }
+        .main-bot {
+          width: 100%;
+        }
+      }
+    </style>
+  </body>
+</html>
