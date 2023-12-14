@@ -84,11 +84,11 @@
          </div>
       </div>
     </header>
-    <div class="logo">
+    <!-- <div class="logo">
       <div class="container">
         <img src="./img/logo.png" alt="#" class="logo-box" />
       </div>
-    </div>
+    </div> -->
     <div class="main">
       <div class="container">
         <h3 class="product">Our Popular Product</h3>
@@ -274,12 +274,19 @@
           max-width: 1200px;
           margin: 0 auto;
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1200px) {
           .container {
-            padding: 0 15px;
+            max-width: 970px;
           }
-          .bg-container {
-            padding: 0 15px;
+        }
+        @media screen and (max-width: 992px) {
+          .container {
+            max-width: 750px;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .container {
+            max-width: none;
           }
         }
         .bg-container {
@@ -290,18 +297,42 @@
           background-repeat: no-repeat;
           background-position: 938px -10px;
         }
+        @media screen and (max-width: 1150px) {
+          .main-flex2 {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .subscribe-button {
+            display:none;
+          }
+          .email {
+            display:none;
+          }
+          .search2 {
+            display:none;
+          }
+          .search-button {
+            display:none;
+          }
+          
+        }
         .header {
           background-color: #f9f6f5;
         }
         @media screen and (max-width: 800px) {
-          .wrapper {
-            flex-direction: column;
-          }
           .nav-items {
             flex-direction: column;
             padding: 0px;
           }
         }
+        /* @media screen and (max-width: 380px) {
+          .wrapper {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items:center;
+          }
+        } */
         .dudeshape {
           font-family: red hat display;
           color: #222222;
