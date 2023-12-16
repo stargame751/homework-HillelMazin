@@ -38,10 +38,10 @@
               <a href="#" class="menu__link">Product 2</a>
               <ul class="menu__list-inner2">
                 <li class="menu__item2">
-                  <a href="#" class="menu__link2">Product 1</a>
+                  <a href="#" class="menu__link2">Sub Item</a>
                 </li>
                 <li class="menu__item2">
-                  <a href="#" class="menu__link2">Product 2</a>
+                  <a href="#" class="menu__link2">Sub Item</a>
                 </li>
               </ul>
             </li>
@@ -105,6 +105,10 @@
         position: relative;
         list-style-type: none;
       }
+      .menu__item2 {
+        position: relative;
+        list-style-type: none;
+      }
       .menu__list-inner {
         position: absolute;
         background-color: blue;
@@ -114,25 +118,39 @@
         position: absolute;
         background-color: blue;
         display: none;
+        left: 200px;
+        top: 0;
       }
       .menu__link {
         color: White;
-        margin-bottom: 25px;
         display: block;
         text-decoration: none;
         font-size: 25px;
         padding: 15px;
+        border: 2px solid #6d6868;
+        width: 200px;
+        height: 70px;
+      }
+      .menu__link2 {
+        color: White;
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 15px;
+        border: 2px solid #6d6868;
+        width: 200px;
+        height: 70px;
       }
       .menu__item:hover .menu__link {
-        background-color: black;
+        background-color: blue;
         color: #fff;
       }
       .menu__item:hover .menu__list-inner {
         display: block;
       }
       .menu__item2:hover .menu__link2 {
-        background-color: red;
-        color: black;
+        background-color: blue;
+        color: white;
         left: 100px;
       }
       .menu__item2:hover .menu__list-inner2 {
