@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link ref="stylesheet" href="/reset.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <!-- <div class="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div> -->
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Home</a>
+          <!-- <ul class="menu__list-inner">
+            <li class="menu__item">
+              <a href="#" class="menu__link">123</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">123</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">123</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Products</a>
+          <ul class="menu__list-inner">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Product 1</a>
+            </li>
+            <li class="menu__item2">
+              <a href="#" class="menu__link">Product 2</a>
+              <ul class="menu__list-inner2">
+                <li class="menu__item2">
+                  <a href="#" class="menu__link2">Product 1</a>
+                </li>
+                <li class="menu__item2">
+                  <a href="#" class="menu__link2">Product 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">About</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+      .burger-menu {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        width: 30px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .menu {
+        background-color: black;
+        /* height: 100%;
+        padding: 10px 0 0 15px;
+        max-width: 200px; */
+        list-style-type: none;
+      }
+      .menu__list {
+        display: flex;
+      }
+      .burger-line {
+        height: 2px;
+        width: 20px;
+        background-color: #333;
+        transition: 0.3s;
+      }
+      .active .burger-line:nth-child(1) {
+        transform: rotate(-45deg) translate (-12px, 5px);
+      }
+      .active .burger-line:nth-child(2) {
+        opacity: 0;
+      }
+      .active .burger-line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, 3px);
+      }
+      .menu__item {
+        position: relative;
+        list-style-type: none;
+      }
+      .menu__list-inner {
+        position: absolute;
+        background-color: blue;
+        display: none;
+      }
+      .menu__list-inner2 {
+        position: absolute;
+        background-color: blue;
+        display: none;
+      }
+      .menu__link {
+        color: White;
+        margin-bottom: 25px;
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 15px;
+      }
+      .menu__item:hover .menu__link {
+        background-color: black;
+        color: #fff;
+      }
+      .menu__item:hover .menu__list-inner {
+        display: block;
+      }
+      .menu__item2:hover .menu__link2 {
+        background-color: red;
+        color: black;
+        left: 100px;
+      }
+      .menu__item2:hover .menu__list-inner2 {
+        display: block;
+      }
+    </style>
+    <script>
+      document
+        .querySelector(".burger-menu")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
