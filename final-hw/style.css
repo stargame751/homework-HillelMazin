@@ -1,0 +1,240 @@
+
+
+.body {
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+
+.container{
+    max-width: 1280px;
+    margin:0 auto;
+}
+.flex-container__header {
+    display:flex;
+    justify-content: space-between;
+}
+.main__flex-container{
+    /* max-width: 1280px; */
+    margin: 0 auto;
+    max-width: 1050px;
+    max-height: 544px;
+    gap:30px;
+    background-color:#2B2B2B;
+    display:flex;
+    justify-content: space-between;
+    padding: 180px 85px 180px 85px;
+    
+}
+.header__nav-items {
+    display:flex;
+    /* justify-content: space-between; */
+    /* margin: 20px 0px 20px 530px; */
+    
+}
+.header__logo {
+    margin: 14px 0px 0 50px;
+}
+
+.container__header {
+    max-width: 1280px;
+    margin:0 auto;
+    background-color: #2B2B2B;
+}
+
+.nft-text {
+    font-size:32;
+    font-family: Work Sans;
+    color:#ffffff;
+}
+.nav-item {
+    padding: 0 20px 0 20px;
+    color:#ffffff;
+}
+.marketplace,
+.rankings,
+.Connect,
+.logo {
+    color:#ffffff;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size:16px;
+    line-height: 22.4px;
+    align-items: center;
+}
+.header,
+.main {
+    background-color: #2B2B2B;
+}
+.nav-item-signup {
+    max-width:152px;
+    max-height:60px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding:0 30px 0 30px;
+    gap: 12px;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size:16px;
+    line-height: 22.4px;
+    text-align: center;
+    background-color: #A259FF;
+}
+.SignUp {
+    color:white;
+}
+.main_infoH1 {
+    font-family:Work Sans;
+    font-weight:600;
+    font-size:67px;
+    line-height: 73.7px;
+    color:#ffffff;
+}
+.main__info {
+    font-family:Work Sans;
+    font-weight: 400;
+    font-size:22px;
+    line-height: 35.2px;
+    color: #ffffff;
+}
+.main__get-started {
+    max-width: 224px;
+    max-height: 60px;
+    border: 1px solid black;
+    border-radius:20px;
+    padding:0 50px 0 50px;
+    gap:12px;
+    background-color: #A259FF;
+    position:relative;
+}
+.start {
+    color:white;
+    font-family:Work Sans;
+    font-weight: 600;
+    font-size:16px;
+    line-height: 22.4px;
+    text-align: center;
+}
+.start::after {
+        content: url(./img/Screenshot_8.png);
+        position:absolute;
+        top:25%;
+        left:26%;
+}
+.flex-container__sale {
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 55px 0 0px;
+}
+.sale {
+    font-family:Space Mono;
+    font-weight: 700;
+    font-size:28px;
+    line-height: 39.2px;
+    color:#ffffff;
+}
+.sale2 {
+    font-family:Work Sans;
+    font-weight: 400;
+    font-size:23.99px;
+    line-height: 38.38px;
+    color:#ffffff;
+}
+.scape-walking {
+    font-family:Work Sans;
+    font-weight: 600;
+    font-size:22px;
+    line-height: 30.8px;
+    color:#ffffff;
+}
+.artist {
+    font-family:Work Sans;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 22.4px;
+    color:#ffffff;
+    position:relative;
+}
+.artist::before {
+    content: url(./img/Avatar.png);
+}
+.artist-card {
+    margin: 50px 0 0 0;
+}
+.flex-container__right {
+    display:flex;
+    flex-direction: column;
+}
+.aboutpicture {
+    background-color: #3B3B3B;
+    padding-left:20px;
+}
+.main2 {
+    background-color: #2B2B2B;
+}
+.trending {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size:38px;
+    line-height: 45.6px;
+    color:#ffffff;
+}
+.container__main2 {
+    max-width: 1050px;
+    max-height: 544px;
+    gap: 30px;
+    background-color: #2B2B2B;
+    padding: 180px 85px 180px 85px;
+    margin: 0 auto;
+}
+.checkout {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size:22px;
+    line-height: 35.2px;
+    color:#ffffff;
+}
+.animals,
+.magic,
+.disco {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size:22px;
+    line-height: 30.8px;
+    color:#ffffff;
+}
+.grid-container1 {
+    display:grid;
+    grid-template-columns: repeat(6,55px);
+    grid-template-rows: repeat(8,60px);
+}
+.kot {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end:8;
+}
+.medved {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.number1 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.artist1 {
+    font-family:Work Sans;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 22.4px;
+    color:#ffffff;
+
+}
+
+
+
+   
