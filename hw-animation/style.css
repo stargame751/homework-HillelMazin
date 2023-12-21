@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Цвет фона */
+  }
+.grid-container {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 280px;
+    grid-template-rows: 140px 140px 140px 140px 140px;
+    background-image: url(./img/nature-3294681_1280\ \(1\).jpg);
+}
+
+.grid-item {
+    background-color: white;
+    opacity: 0; /* Изначальное состояние: полностью прозрачно */
+    animation: fadeInOut 3s forwards; /* Название анимации, длительность, и удержание последнего кадра */
+    
+}
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
